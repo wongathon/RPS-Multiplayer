@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplayer Rock Paper Scissors</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src= "assets/javascript/logic.js"></script>
+
+
+	
+</head>
+<body>
+	
+	<h1>Rock Paper Scissors</h1>
+	<div id="greeting">
+		<form>
+			Enter name:
+			<input id="player-name" type="text">
+			<input id="add-player" type="submit" value="submit">
+		</form>
+	</div>
+	<br>
+	<div id="info-box">Waiting for another player to join...</div>
+
+<div id="boxes">
+	<div id="player-box-1">
+		<div id="player-name-1"></div>
+		<div id="rps-box-1"></div>
+		<div id="win-loss-box-1"></div>
+	</div>
+
+	<div id="result-field"></div>
+
+	<div id="player-box-2">
+		<div id="player-name-2"></div>
+		<div id="rps-box-2"></div>
+		<div id="win-loss-box-2"></div>
+	</div>
+</div>
+
+<div id="chat-box-container">
+	<div id="chat-box">Chatbox v0.1</div>
+	<form action="">
+		<input id="chat" type="text">
+		<input type="submit" id="chat-submit" value="Send">
+	</form>
+</div>
+
+
+</body>
+</html>
